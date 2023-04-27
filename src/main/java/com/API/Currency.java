@@ -1,22 +1,3 @@
 package com.API;
 
-public class Currency {
-    private int value;
-    private String name;
-
-    public int getValue() {
-        return value;
-    }
-
-    public void setValue(int value) {
-        this.value = value;
-    }
-
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
-}
+public record Currency(int value, String name) { }
